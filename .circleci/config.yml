@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World! && id && ls -al / && ps -ef && uname -a"
+          command: "echo Hello, World! && id && cat /.circleci-runner-config.json && /sbin/ifconfig"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
